@@ -1,0 +1,23 @@
+{
+  "name": "user-interface-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass -w scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RahmanErturk/User-Interface-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RahmanErturk/User-Interface-Project/issues"
+  },
+  "homepage": "https://github.com/RahmanErturk/User-Interface-Project#readme",
+  "dependencies": {
+    "sass": "^1.52.3"
+  }
+}
