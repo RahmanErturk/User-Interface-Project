@@ -4,7 +4,7 @@ main {
 }
 #home {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-image: url(https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80;);
     background-position: center;
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@ main {
     padding-top: 200px;
     animation: slide 1s forwards 0.2s;
 }
-h1 {
+.headline__main-title {
     color: rgb(224, 224, 224);
     font-size: 4em;
     font-weight: 600;
@@ -37,7 +37,7 @@ h1 {
     background-color: rgba(128, 128, 128, 0.4);
     padding: 10px 40px 0 40px;
 }
-h3 {
+.headline__under-title {
     color: #b01a1b;
     font-size: 2.5em;
     font-weight: 500;
@@ -77,94 +77,10 @@ h3 {
     }
 }
 
-@media(max-width:1200px) {
-    .home__headline {
-        width: 550px;
-    }
-}
-
-@media(max-width:840px) {
-    .home__text {
-        width: 350px;
-    }
-}
-
-@media(max-width:720px) {
-    #home {
-        align-items: flex-start;
-    }
-    .home__content {
-        align-items: flex-start;
-        justify-content: flex-end;
-    }
-    .home__headline {
-        width: 80%;
-        text-align: left;
-        font-size: 9px;
-        padding: unset;
-    }
-
-    h1 {
-        padding: 10px 15px;
-    }
-    h3 {
-        padding: 10px 15px;
-    }
-    @keyframes slide {
-        from {
-            transform: translateX(0);
-        }
-        to {
-            transform: translateX(50px);
-        }
-    }
-    .home__text {
-        width: 200px;
-        font-weight: 400;
-        font-size: 14px;
-    }
-    @keyframes growing {
-        from {
-            transform: translateX(70px) scale(1.3);
-        }
-        to {         
-            opacity: 1;
-            transform: translateX(70px) scale(1.5) 
-        }
-    }
-}
-
-@media(max-width:400px) {
-    .home__headline {
-        width: 80%;
-    }
-    @keyframes slide {
-        from {
-            transform: translateX(0);
-        }
-        to {
-            transform: translateX(40px);
-        }
-    }
-    .home__text {
-        width: 160px;
-        font-size: 12px;
-    }
-    @keyframes growing {
-        from {
-            transform: translateX(50px) scale(1.3);
-        }
-        to {         
-            opacity: 1;
-            transform: translateX(50px) scale(1.5) 
-        }
-    }
-}
-
 .buttons {
     width: 100%;
     text-align: center;
-    top: 100px;
+    top: 80px;
     position: relative;
 }
 
@@ -197,5 +113,106 @@ h3 {
     }
     to {
         transform: translateY(10px);
+    }
+}
+
+@media(max-width:1200px) {
+    .home__headline {
+        width: 550px;
+    }
+}
+
+@media(max-width:860px) {
+    .home__text {
+        width: 350px;
+    }
+}
+
+@media(max-width:720px) {
+    #home {
+        align-items: flex-start;
+    }
+    .home__content {
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+    .home__headline {
+        width: 80%;
+        text-align: left;
+        font-size: 9px;
+        padding: unset;
+    }
+
+    .headline__main-title {
+        padding: 10px 15px;
+    }
+    .headline__under-title {
+        padding: 10px 15px;
+    }
+    @keyframes slide {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(50px);
+        }
+    }
+    .home__text {
+        width: 200px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    @keyframes growing {
+        from {
+            transform: translateX(70px) scale(1.3);
+        }
+        to {         
+            opacity: 1;
+            transform: translateX(70px) scale(1.5) 
+        }
+    }
+}
+
+@media(max-width:420px) {
+    .home__headline {
+        width: 260px;
+        font-size: 8px;
+    }
+    @keyframes slide {
+        from {
+            transform: translateX(-10);
+        }
+        to {
+            transform: translateX(30px);
+        }
+    }
+    .home__text {
+        width: 160px;
+        font-size: 10px;
+    }
+    @keyframes growing {
+        from {
+            transform: translateX(50px) scale(1.3);
+        }
+        to {         
+            opacity: 1;
+            transform: translateX(50px) scale(1.5) 
+        }
+    }
+    .buttons {
+        top: 70px;
+    }
+    .buttons button {
+        padding: 8px 30px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    @keyframes slideY {
+        from {
+            transform: translateY(-10px);
+        }
+        to {
+            transform: translateY(0px);
+        }
     }
 }

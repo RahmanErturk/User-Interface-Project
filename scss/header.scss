@@ -47,6 +47,7 @@ nav {
   font-weight: 500;
 }
 
+// Search Bar
 #search-box {
   display: none;
 }
@@ -81,6 +82,27 @@ nav {
 
 .search-respnsv {
   display: none;
+}
+// ---------
+
+.dropdown-list {
+  display: none;
+  position: fixed;
+  top: 100px;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  border: 2px solid #b01a1b;
+  padding: 0px 28px;
+  margin-left: -50px;
+  z-index: 11;
+}
+
+.dropdown-list li a {
+  color: #b01a1b;
+}
+
+.navbar__link:hover  .dropdown-list {
+  display: block;
 }
 
 .checkbtn {
@@ -154,13 +176,3 @@ nav {
   }
 } 
 
-
-
-
-
-
-// https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
-
-// https://images.unsplash.com/photo-1516888693095-f0e05366ddc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80
-
-// https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80

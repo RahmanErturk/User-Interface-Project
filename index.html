@@ -25,8 +25,28 @@
           <i class="fa-solid fa-bars"></i>
         </label>
         <ul class="navbar__list">
-          <li class="navbar__link"><a href="#">Hakkımızda</a></li>
-          <li class="navbar__link"><a href="#">Faaliyet Alanları</a></li>
+          <li class="navbar__link">
+            <a href="#hakkimizda" class="dropdown-menu">Kurumsal
+              <ul class="dropdown-list">
+                <li><a href="#hakkimizda">Hakkımızda</a></li>
+                <li><a href="#ekibimiz">Ekibimiz</a></li>
+              </ul>
+            </a>
+            
+          </li>
+          <li class="navbar__link">
+            <a href="#">Faaliyet Alanları
+              <ul class="dropdown-list">
+                <li><a href="#">Arabuluculuk</a></li>
+                <li><a href="#">Icra ve Iflas Hukuku</a></li>
+                <li><a href="#">Is Hukuku</a></li>
+                <li><a href="#">Sirketler Hukuku</a></li>
+                <li><a href="#">Ceza Hukuku</a></li>
+                <li><a href="#">Aile Hukuku</a></li>
+                <li><a href="#">Tüketici Hukuku</a></li>
+                <li><a href="#">Gayrimenkul Hukuku</a></li>
+            </ul>
+          </a></li>
           <li class="navbar__link"><a href="#">Avukata Sor</a></li>
           <li class="navbar__link"><a href="#">Blog</a></li>
           <li class="navbar__link"><a href="#">İletişim</a></li>
@@ -50,8 +70,8 @@
       
       <div class="home__content"> 
         <div class="home__headline">
-          <h1>ErtürK Hukuk ve Danışmanlık</h1>
-          <h3>Av. Resul Ertürk</h3>
+          <h1 class="headline__main-title">ErtürK Hukuk ve Danışmanlık</h1>
+          <h3 class="headline__under-title">Av. Resul Ertürk</h3>
         </div>
         <div class="home__text">
         <p>Avukatlik bir demokrasinin olmazsa olmazlarindan olan savunma hakkinin temelidir. Kutsal bir kamu hizmeti olarak kamu vicdani ve adaletin saglanmasinin teminatidir. </p>
@@ -59,9 +79,79 @@
       </div>
       <div class="buttons">
         <button type="submit">Avukata Sor</button>
-        <i class="fa-solid fa-angles-down"></i>
+        <a href="#hakkimizda"><i class="fa-solid fa-angles-down"></i></a>
       </div>
 
+    </section>
+
+    <section id="hakkimizda">
+      
+        <div class="about__headline">
+          <h2>Hakkımızda</h2>
+        </div>
+        <div class="about__image">
+          <img src="https://images.pexels.com/photos/6077123/pexels-photo-6077123.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="ein Foto von Themis">
+        </div>
+        <div class="about__content-1">
+          <div class="content__title">
+            <h3>Ertürk Hukuk ve Danismalik Hakkinda</h3>
+            <div class="content__title-line"></div>
+          </div>
+          <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit error reprehenderit molestias sapiente repudiandae libero quasi, soluta possimus eaque ex maxime tempore laborum ducimus, cumque repellendus. Repellat vitae, nobis perspiciatis dolore aperiam illum a accusantium, consectetur aut ipsum iure amet officia tempora eaque pariatur velit. Animi eveniet aperiam quia ipsa dolore ab blanditiis, obcaecati fugiat accusantium consequatur reprehenderit excepturi perferendis suscipit natus minus dignissimos officia!</p>
+        </div>
+       
+        <div class="about__content-2">
+          <div class="content__title">
+            <h3>Vizyonumuz</h3>
+            <div class="content__title-line"></div>
+          </div>
+          <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, esse fugiat repellat optio, iure nulla ducimus corrupti saepe minima minus ipsum laborum illo adipisci dolorem amet necessitatibus. Architecto totam vel id quasi, repudiandae, ducimus omnis perspiciatis, praesentium vitae suscipit ratione ad quam voluptatum sunt commodi voluptates ut laboriosam pariatur ea?</p>
+        </div> 
+
+        <div class="about__content-3">
+          <div class="content__title">
+            <h3>Misyonumuz</h3>
+            <div class="content__title-line"></div>
+          </div>
+          <p class="content__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus incidunt vel similique reprehenderit in ipsam doloremque quas, odit voluptatum possimus quo. Velit tempore nihil assumenda animi suscipit necessitatibus explicabo odio cumque nesciunt quaerat eos, illum totam rem incidunt id quos expedita reprehenderit veniam corporis ipsam! Exercitationem amet perspiciatis dicta ex?</p>
+        </div> 
+        <div id="ekibimiz"></div>
+        <div class="team__headline">
+          <h3>Ekibimiz</h3>
+        </div>  
+        <div class="team__background"></div>  
+        <div class="team__member-1 member">
+          <div class="member__photo">
+            <img src="https://images.pexels.com/photos/7654432/pexels-photo-7654432.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+          </div>
+          <div class="member__info">
+            <p class="member__name">Av. Resul Ertürk</p>
+            <p class="member__title">Kurucu Avukat</p>
+            <p class="member__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus vero et deleniti nobis sint temporibus quibusdam dolor porro quis? Odio?</p>
+          </div>
+        </div>
+      
+        <div class="team__member-2 member">
+          <div class="member__photo">
+            <img src="https://images.pexels.com/photos/8424520/pexels-photo-8424520.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+          </div>
+          <div class="member__info">
+            <p class="member__name">Av. Resul Ertürk</p>
+            <p class="member__title">Kurucu Avukat</p>
+            <p class="member__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus vero et deleniti nobis sint temporibus quibusdam dolor porro quis? Odio?</p>
+          </div>
+        </div>
+        <div class="team__member-3 member">
+          <div class="member__photo">
+            <img src="https://images.pexels.com/photos/8424939/pexels-photo-8424939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+          </div>
+          <div class="member__info">
+            <p class="member__name">Av. Resul Ertürk</p>
+            <p class="member__title">Kurucu Avukat</p>
+            <p class="member__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus vero et deleniti nobis sint temporibus quibusdam dolor porro quis? Odio?</p>
+          </div>
+        </div>  
+        
     </section>
   </main>
 </body>
