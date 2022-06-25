@@ -530,7 +530,7 @@ main {
 .member {
   padding: 20px;
   margin: -10px 30px;
-  background-color: #25253d;
+  background-color: #000022;
 }
 
 .member__name {
@@ -723,6 +723,8 @@ main {
     grid-row: 28/55;
     margin: 20px 0;
     border-left: unset;
+    border-top: 5px solid #b01a1b;
+    border-bottom: 5px solid #b01a1b;
   }
   .member {
     display: unset;
@@ -763,6 +765,8 @@ main {
     grid-row: 29/59;
     margin: 20px 0;
     border-left: unset;
+    border-top: 5px solid #b01a1b;
+    border-bottom: 5px solid #b01a1b;
   }
   .member {
     display: unset;
@@ -776,6 +780,43 @@ main {
   }
   .team__member-3 {
     grid-row: 50/60;
+  }
+  .member__photo {
+    width: 100%;
+    height: 60%;
+  }
+}
+@media (max-width: 400px) {
+  .about__content-3 {
+    grid-column: 2/12;
+    grid-row: 20/24;
+  }
+  #ekibimiz {
+    grid-row: 24/26;
+  }
+  .team__headline {
+    grid-row: 27/29;
+    grid-column: 6/13;
+  }
+  .team__background {
+    grid-column: 1/13;
+    grid-row: 31/64;
+    margin: 20px 0;
+    border-top: 5px solid #b01a1b;
+    border-bottom: 5px solid #b01a1b;
+  }
+  .member {
+    display: unset;
+    grid-column: 2/12;
+  }
+  .team__member-1 {
+    grid-row: 30/41;
+  }
+  .team__member-2 {
+    grid-row: 42/53;
+  }
+  .team__member-3 {
+    grid-row: 54/65;
   }
   .member__photo {
     width: 100%;
