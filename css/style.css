@@ -783,7 +783,7 @@ main {
   }
   .member__photo {
     width: 100%;
-    height: 60%;
+    height: 50%;
   }
 }
 @media (max-width: 400px) {
@@ -800,7 +800,7 @@ main {
   }
   .team__background {
     grid-column: 1/13;
-    grid-row: 31/64;
+    grid-row: 31/61;
     margin: 20px 0;
     border-top: 5px solid #b01a1b;
     border-bottom: 5px solid #b01a1b;
@@ -810,17 +810,17 @@ main {
     grid-column: 2/12;
   }
   .team__member-1 {
-    grid-row: 30/41;
+    grid-row: 30/40;
   }
   .team__member-2 {
-    grid-row: 42/53;
+    grid-row: 41/51;
   }
   .team__member-3 {
-    grid-row: 54/65;
+    grid-row: 52/62;
   }
   .member__photo {
     width: 100%;
-    height: 60%;
+    height: 50%;
   }
 }
 
