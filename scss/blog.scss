@@ -1,14 +1,19 @@
 #blog {
     width: 100%;
     min-height: 100vh;
-    display: grid;
 }
+
+.placeholder {
+    height: 120px;
+}
+
 .blog__headline {
+    width: 100%;
     display: flex;
     justify-content: flex-end;
 }
 .blog__headline h2{
-    max-width: 700px;
+    width: 30%;
     font-size: 3rem;
     background-color: #b01a1b;
     color: white;
@@ -115,11 +120,17 @@
     .blog {
         width: 90%;
     }
+    .blog__headline h2{
+        width: 35%;
+    }
 }
 
 @media (max-width:1045px) {
     .most__headline {
         font-size: 1.5rem;
+    }
+    .blog__headline h2{
+        width: 40%;
     }
 }
 
@@ -134,8 +145,21 @@
     .blog__most {
         width: 100%;
     }
-    .most__article, .most__headline {
-        margin: 0 0 0 20px;
+    .latest__article {
+        margin: 20px 0px;
+    }
+    .article__info {
+        margin: 0px;
+    }
+    .latest__headline h2 {
+        font-size: 2rem;
+    }
+    .most__headline {
+        font-size: 1.3rem;
+    }
+    .blog__headline h2{
+        width: 50%;
+        font-size: 2.5rem;
     }
 }
 
@@ -147,14 +171,25 @@
         width: 60%;
         margin: 0 10px;
     }
+    .blog__headline h2{
+        width: 60%;
+        font-size: 2rem;
+    }
 }
 
 @media (max-width:450px) {
-    .article__img {
-        width: 50%;
-    }
     .article__info {
-        width: 50%;
+        width: 60%;
         margin: 0 5px;
+        padding: 10px;
+    }
+    .info__button a {
+        font-size: 12px;
+        font-weight: 400;
+        width: 120px;
+    }
+    .blog__headline h2{
+        width: 70%;
+        font-size: 2rem;
     }
 }

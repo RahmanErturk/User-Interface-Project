@@ -20,8 +20,8 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.75);
-  background: linear-gradient(90deg, rgba(228, 228, 228, 0.9) 0%, rgba(199, 199, 199, 0.5) 52%, rgba(149, 149, 149, 0.8) 100%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(228, 228, 228, 0.9) 0%, rgba(199, 199, 199, 0.7) 52%, rgba(149, 149, 149, 0.8) 100%);
   z-index: 10;
   box-shadow: 0px 0px 10px rgb(150, 150, 150);
 }
@@ -929,16 +929,20 @@ main {
 #blog {
   width: 100%;
   min-height: 100vh;
-  display: grid;
+}
+
+.placeholder {
+  height: 120px;
 }
 
 .blog__headline {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
 .blog__headline h2 {
-  max-width: 700px;
+  width: 30%;
   font-size: 3rem;
   background-color: #b01a1b;
   color: white;
@@ -1047,10 +1051,16 @@ main {
   .blog {
     width: 90%;
   }
+  .blog__headline h2 {
+    width: 35%;
+  }
 }
 @media (max-width: 1045px) {
   .most__headline {
     font-size: 1.5rem;
+  }
+  .blog__headline h2 {
+    width: 40%;
   }
 }
 @media (max-width: 895px) {
@@ -1064,8 +1074,21 @@ main {
   .blog__most {
     width: 100%;
   }
-  .most__article, .most__headline {
-    margin: 0 0 0 20px;
+  .latest__article {
+    margin: 20px 0px;
+  }
+  .article__info {
+    margin: 0px;
+  }
+  .latest__headline h2 {
+    font-size: 2rem;
+  }
+  .most__headline {
+    font-size: 1.3rem;
+  }
+  .blog__headline h2 {
+    width: 50%;
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 600px) {
@@ -1076,14 +1099,25 @@ main {
     width: 60%;
     margin: 0 10px;
   }
+  .blog__headline h2 {
+    width: 60%;
+    font-size: 2rem;
+  }
 }
 @media (max-width: 450px) {
-  .article__img {
-    width: 50%;
-  }
   .article__info {
-    width: 50%;
+    width: 60%;
     margin: 0 5px;
+    padding: 10px;
+  }
+  .info__button a {
+    font-size: 12px;
+    font-weight: 400;
+    width: 120px;
+  }
+  .blog__headline h2 {
+    width: 70%;
+    font-size: 2rem;
   }
 }
 
