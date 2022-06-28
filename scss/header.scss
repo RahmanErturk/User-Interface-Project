@@ -143,6 +143,10 @@ nav {
   .checkbtn {
     display: inline-block;
   }
+
+  .dropdown-list, .dropdown-list li a {
+    display: none;
+  }
   .navbar__list {
     position: fixed;
     width: 100%;

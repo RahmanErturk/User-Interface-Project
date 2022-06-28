@@ -151,6 +151,9 @@ nav {
   .checkbtn {
     display: inline-block;
   }
+  .dropdown-list, .dropdown-list li a {
+    display: none;
+  }
   .navbar__list {
     position: fixed;
     width: 100%;
@@ -275,7 +278,11 @@ main {
   font-size: 16px;
 }
 
-.buttons button:hover {
+.buttons button a {
+  color: white;
+}
+
+.buttons button:hover, .buttons button:hover a {
   background-color: white;
   color: #b01a1b;
 }
@@ -525,6 +532,11 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
+}
+
+.member-1 img {
+  object-position: center;
 }
 
 .member {
