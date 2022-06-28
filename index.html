@@ -45,9 +45,8 @@
                 <li><a href="#">Sirketler Hukuku</a></li>
             </ul>
           </a></li>
-          <li class="navbar__link"><a href="#">Avukata Sor</a></li>
           <li class="navbar__link"><a href="#blog">Blog</a></li>
-          <li class="navbar__link"><a href="#">İletişim</a></li>
+          <li class="navbar__link"><a href="#iletisim">İletişim</a></li>
           <li class="navbar__link search-respnsv"><a href="#">Search </a><i class="search-icon fa-solid fa-magnifying-glass"></i></li>
         </ul>
       </nav>
@@ -392,40 +391,48 @@
       </div>
     </section>
 
-    <!-- <section id="iletisim">
+    <section id="iletisim">
       <div class="placeholder"></div>
+
       <div class="contact">
+
+        <div class="contact__image">
+          <img src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="court">
+        </div>
+
         <div class="contact__headline">
           <h2>Iletisim</h2>
         </div>
+      
         <div class="contact__content">
           <div class="content__contact-form">
-            <form action="https://formspree.io/f/myyolvky" method="post">
-              <div class="contact-info__info-title">
-                <h3>Avukata Soru Sorun</h3>
-                <p>Hemen formu doldurun, size en kısa sürede dönüş yapalım.</p>
-              </div>
 
+            <div class="contact-info__info-title">
+              <h3>Avukata Soru Sorun</h3>
+              <p>Hemen formu doldurun, size en kısa sürede dönüş yapalım.</p>
+            </div>
+
+            <form action="https://formspree.io/f/myyolvky" method="post">
               <label>
-                  <input type="text" name="vorname" class="form" placeholder="Adiniz" required >
+                  <input type="text" name="vorname" class="form-item" placeholder="Adiniz" required >
               </label><br>
               <label>  
-                  <input type="text" name="lastname" class="form" placeholder="Soyadiniz" required>
+                  <input type="text" name="lastname" class="form-item" placeholder="Soyadiniz" required>
               </label><br>
               <label>
-                  <input type="text" name="straße" class="form" placeholder="Adres" required>
+                  <input type="text" name="straße" class="form-item" placeholder="Adres" required>
               </label><br>
               <label>
-                  <input type="text" name="telefon" class="form" placeholder="Telefon Numaraniz">
+                  <input type="text" name="telefon" class="form-item" placeholder="Telefon Numaraniz">
               </label><br>
               <label>
-                  <input type="email" name="email" class="form" placeholder="Email" required>
+                  <input type="email" name="email" class="form-item" placeholder="Email" required>
               </label><br>
               <label>
-                <input type="text" name="telefon" class="form" placeholder="Konu">
+                <input type="text" name="telefon" class="form-item" placeholder="Konu">
               </label><br>
               <label>
-                  <textarea name="kommentar" placeholder="Mesajiniz"></textarea>
+                  <textarea name="kommentar" class="form-item message" placeholder="Mesajiniz"></textarea>
               </label>
             </form>
             <button type="submit">Avukata Sor</button>
@@ -458,12 +465,116 @@
             </div>
 
             <div class="contact-info__iframe">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98139.38974725848!2d30.5448145!3d39.765343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cc3e08220c0e5f%3A0xbc89395938049a08!2zRXNracWfZWhpciwgVMO8cmtpeWU!5e0!3m2!1str!2sde!4v1656370234590!5m2!1str!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98139.38974725848!2d30.5448145!3d39.765343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cc3e08220c0e5f%3A0xbc89395938049a08!2zRXNracWfZWhpciwgVMO8cmtpeWU!5e0!3m2!1str!2sde!4v1656370234590!5m2!1str!2sde" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
+      <div class="placeholder-bottom"></div>
+    </section>
+
+    <footer>
+
+      <div class="footer__footer-content">
+      
+        <div class="footer-items">
+          <a href="#hakkimizda">
+            <h3>Ertürk Hukuk ve Danismanlik</h3>
+          </a>  
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vitae corrupti alias aspernatur suscipit non sequi nam repellat ipsum consequatur!</p>
+        </div>
+
+        <div class="footer-items">
+          <a href="#hizmetlerimiz">
+            <h3>Faaliyet Alanları</h3>
+          </a>
+          <ul>
+            <li>Arabuluculuk</li>
+            <li>Aile Hukuku</li>
+            <li>Ceza Hukuku</li>
+            <li>Icra ve Iflas Hukuku</li>
+            <li>Is Hukuku</li>
+            <li>Sirketler Hukuku</li>
+          </ul>
+        </div>
+
+        <div class="footer-items">
+          <h3>Hizli Linkler</h3>
+          <ul>
+            <li><a href="https://www.yargitay.gov.tr/" target="_blank">Yargitay Baskanligi</a></li>
+            <li><a href="https://www.danistay.gov.tr/" target="_blank">Danistay Baskanligi</a></li>
+            <li><a href="https://www.anayasa.gov.tr/tr/anasayfa/" target="_blank">Anayasa Mahkemsi</a></li>
+            <li><a href="https://www.barobirlik.org.tr/" target="_blank">Barolar Birligi</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-items">
+          <h3>Iletisim</h3>
+          <div class="items-contact">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <p>Hacialibey Mah. Sakarya-1 Cad. No: 30/2 Tepebasi Eskisehir</p>
+          </div>
+          <div class="items-contact">
+            <i class="fa-solid fa-phone-flip"></i>
+            <p>+90 123 456 78 90</p>
+          </div>
+          <div class="items-contact">
+            <i class="fa-solid fa-envelope"></i>
+            <p>av.lorem.ipsum@ erturk.hukuk.tr</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="social-media">
+        <div class="footer-logo-title">
+          <div class="footer-logo">
+            <img src="./bilder/ertürk_logo.png" alt="">
+          </div>
+          <p>Ertürk Hukuk ve Danismanlik</p>
+        </div>
+        <div class="social-media__links">
+
+          <div class="smlogo">
+
+            <a href="https://instagram.com" target="-blank">
+              <i class="fa-brands fa-instagram-square"></i>
+            </a>
+
+          </div>
+
+          <div class="smlogo">
+
+            <a href="https://facebook.com" target="-blank">
+              <i class="fa-brands fa-facebook-square"></i>
+            </a>
+
+          </div>
+          <div class="smlogo">
+
+            <a href="https://twitter.com" target="-blank">
+              <i class="fa-brands fa-twitter-square"></i>
+            </a>
+
+          </div> 
+
+          <div class="smlogo">
+              <a href="https://linkedin.com" target="-blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+          </div> 
+        </div>
+      </div>
+
+      <div class="copyright">
+        <small>
+          <p>&copy; Copyright 2022 | Tüm Haklari Saklidir.</p>
+        </small>
+      </div>
+
+      <div class="placeholder-bottom"></div>
+
+    </footer>
   </main>
 </body>
 </html>
